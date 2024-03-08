@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Register_img from "../../assets/images/register_img.jpeg";
 
 const AddShipment = () => {
   
@@ -233,12 +234,7 @@ const AddShipment = () => {
           {err && <p className="text-danger">{err}</p>}
         </div>
         <div className="col-lg-7 mt-sm-3 mx-sm-auto">
-          <img
-            src="https://images.pexels.com/photos/7706416/pexels-photo-7706416.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt=""
-            width="500"
-            height="600"
-          />
+          <img src={Register_img} alt="" width="500" height="600" />
         </div>
       </div>
     </>
